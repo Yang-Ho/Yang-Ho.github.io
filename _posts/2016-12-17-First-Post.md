@@ -3,6 +3,7 @@ layout: post
 title:  "New years resolution"
 date:   2016-12-17 11:54:29 -0500
 categories: Post 
+tags: [web, jekyll]
 ---
 
 Hello World!
