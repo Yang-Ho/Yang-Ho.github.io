@@ -13,6 +13,7 @@ layout: default
         {{ content }}
 
         {% assign post = page %}
+
         {% if post.tags.size > 0 %}
             {% capture tags_content %} with <span class="icon-price-tag{% if post.tags.size > 1 %}s{% endif %}"></span>: {% endcapture %}
             {% for post_tag in post.tags %}
@@ -24,7 +25,9 @@ layout: default
                 {% endif %}
             {% endfor %}
         {% endif %}
+
         <p id="post-meta">Posted{{ tags_content }} </p>
+
     </div>
 
 
