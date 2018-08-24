@@ -52,7 +52,7 @@ There are two basic operations:
 1. The Push operation simply pushes excess flow from v to w. 
   * This is done by adding $$\delta = \text{min}(e(v), r_f(v,w))$$ to the flows from v and subtracting from the flows from w. 
   * Note: a push can only be done if $$d(v) \ge d(w) + 1$$. 
-2.  To relabel a vertex $$v$$, simply take the min$$\{d(w) + 1|(v,w) \in E_f\}$$. Figure \ref{fig:relabel} provides an example of how relabeling functions. 
+2.  To relabel a vertex $$v$$, simply take the min$$\{d(w) + 1|(v,w) \in E_f\}$$. 
   * If $$d(v) < d(w) + 1$$, then a relabeling is required
 
 Below is an example of how the relabelling operation works:
@@ -91,7 +91,7 @@ In order for to push from $$v$$ to $$w$$ again, there must be at least two relab
 Since both $$d(v)$$ and $$d(w)$$ are bounded by $$2n - 1$$, there can be at most $$2n - 1$$ saturated pushes for the $$vw$$ edge. 
 Thus the maximum number of saturated pushes is $$O(2nm)$$. 
 
-Let $$P$$ be the sum of $$d(v)$$ for all active $v$.
+Let $$P$$ be the sum of $$d(v)$$ for all active $$v$$.
 Since each saturated push can increase $$P$$ by at most $$2n - 1$$, the total increase to $$P$$ due to saturated pushes is $$(2n -1)(2nm)$$. 
 Likewise, since the total increase to $$P$$ due to relabeling is less than $$2n - 1$$ for each vertex that is not $$s$$ or $$t$$.
 $$P$$ only decreases when there is an unsaturated push from $$v$$ to $$w$$ since $$d(v) > d(w)$$. 
