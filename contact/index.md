@@ -4,4 +4,6 @@ title: Contact
 permalink: /contact/
 ---
 
-Contact information goes here
+Name: Yang Ho
+Email: yho@ncsu.edu
+Phone: 919-454-8934
